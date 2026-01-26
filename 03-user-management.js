@@ -14,7 +14,7 @@ const users = [
   { nom: "Éric", age: 22, estAdmin: true }
 ];
 
-console.log(whoIsAdmin(users)); // ["Paul", "Éric"]
+console.log(whoIsAdmin(users));
 
 // Ne pas modifier la ligne ci-dessous
 module.exports = {
