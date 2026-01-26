@@ -1,16 +1,22 @@
-// Crée une fonction whoIsAdmin qui affiche les noms des utilisateurs qui sont admin qui prends en paramètre un tableau d'objet d'utilisateurs .
-// Chaque objet utilisateur a les propriétés suivantes :
-// - nom (string)
-// - age (number)
-// - estAdmin (boolean)
-// La fonction doit retourner un tableau contenant les noms des utilisateurs qui sont admin.
+function whoIsAdmin(utilisateurs) {
+  // Vérifier que c'est bien un tableau
+  if (!Array.isArray(utilisateurs)) return [];
 
-function whoIsAdmin() {
-	
+  // Filtrer les utilisateurs qui sont admin et retourner leurs noms
+  return utilisateurs
+    .filter(user => user.estAdmin === true)
+    .map(user => user.nom);
 }
 
+const users = [
+  { nom: "Paul", age: 25, estAdmin: true },
+  { nom: "Marie", age: 30, estAdmin: false },
+  { nom: "Éric", age: 22, estAdmin: true }
+];
+
+console.log(whoIsAdmin(users)); // ["Paul", "Éric"]
+
+// Ne pas modifier la ligne ci-dessous
 module.exports = {
-	whoIsAdmin,
+  whoIsAdmin,
 };
-
-
