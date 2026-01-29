@@ -29,14 +29,13 @@ function showStudentBulletin(eleves) {
 }
 
 const eleves = [
-  { nom: "Paul", notes: [15, 18, 16] },
-  { nom: "Marie", notes: [12, 14, 13] },
-  { nom: "Éric", notes: [] }
+  { nom: "Manassé Bonsomi", notes: [18, 18, 17] },
+  { nom: "Kent Ngala", notes: [20, 14, 15] },
+  { nom: "Sacré Mbiku", notes: [19, 18, 14] }
 ];
 
 console.log(showStudentBulletin(eleves));
 
-// Ne pas modifier la ligne ci-dessous
 module.exports = {
   showStudentBulletin,
 };

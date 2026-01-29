@@ -56,7 +56,9 @@ function login(email, password) {
   return utilisateur;
 }
 
-console.log(signUp("Paul", "paul@mail.com", "1234", "1234"));
-console.log(login("paul@mail.com", "1234"));
+console.log(signUp("Manassé Bonsomi", "manassebonsomi.bmm@mail.com", "1234", "1234"));
+console.log(signUp("Kent Ngala", "kentngala@mail.com", "0000", "0000"));
+console.log(login("manassebonsomi.bmm@mail.com", "1234"));
+console.log(login("kentngala@mail.com", "5555"));
 
 module.exports = { baseDeDonnees, signUp, login };

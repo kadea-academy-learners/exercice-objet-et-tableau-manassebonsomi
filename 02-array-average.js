@@ -20,9 +20,9 @@ function averageNote(notes) {
   return moyenne >= 10 ? "Réussi" : "Échoué";
 }
 
-console.log(averageNote([12, 8, 15, 9, 11])); // "Réussi"
-console.log(averageNote([5, 7, 9, 8, 6]));    // "Échoué"
-console.log(averageNote([]));                 // "Échoué"
+console.log(averageNote([12, 8, 15, 9, 11])); 
+console.log(averageNote([5, 7, 9, 8, 6]));    
+console.log(averageNote([]));                 
 
 // Ne pas modifier la ligne ci-dessous
 module.exports = {

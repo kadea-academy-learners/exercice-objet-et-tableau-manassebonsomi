@@ -6,7 +6,7 @@ function createUser(nom, age, estConnecte) {
     };
 }
 
-const utilisateur = createUser("Paul", 25, true);
+const utilisateur = createUser("Manassé Bonsomi", 25, true);
 console.log(utilisateur); 
 
 module.exports = {
